@@ -421,3 +421,29 @@
 .card-text {
   margin: 4px 0;
 }
+
+/* Media Query for screens below 320px width */
+@media (max-width: 320px) {
+  p {
+    font-size: 10px; /* Adjust the font size as needed */
+  }
+
+  h1 {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+
+  h2 {
+    font-size: 17px; /* Adjust the font size as needed */
+  }
+
+  
+  h4 {
+    font-size: 17px; /* Adjust the font size as needed */
+  }
+
+
+.hide-on-mobile{
+  display: none;
+}
+  /* Add more styles for other elements as needed */
+}
