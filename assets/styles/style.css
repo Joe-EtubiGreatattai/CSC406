@@ -1,0 +1,423 @@
+/* Profile Picture Input */
+.profile-pic-preview {
+  position: relative;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-pic-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic-label .icon {
+  margin-right: 0.5rem;
+}
+
+/* Hide default input file appearance */
+.input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+/* Add your custom styles here */
+.custom-menu-item{
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Add your custom styles here */
+.animated-list{
+    list-style: square;
+}
+
+/* Animated list styles */
+.animated-list li {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Add your custom styles here */
+
+/* Our Final Words Slider */
+.our-final-words-slider {
+    margin-top: 2rem;
+  }
+  
+  .our-final-words-slider .card {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .our-final-words-slider .card:hover {
+    transform: translateY(-4px);
+  }
+  
+  .our-final-words-slider .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .our-final-words-slider .student-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #444;
+    margin-top: 1rem;
+  }
+
+  /* Add your custom styles here */
+/* Add your custom styles here */
+
+/* Section Styling */
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #007bff, #00c3ff);
+  }
+  
+  .contact-email {
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+  }
+  
+  .email-link {
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* Photo Grid Gallery */
+/* Add your custom styles here */
+
+/* Event Section Styling */
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  position: relative;
+}
+
+.event-image {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  color: #fff;
+  opacity: .8;
+  transition: opacity 0.3s ease;
+}
+
+.event-card:hover .overlay {
+  opacity: 1;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.event-text {
+  text-align: center;
+}
+
+.see-more-events {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.see-more-link {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.see-more-link:hover {
+  background-color: #0056b3;
+}
+
+/* Add your custom styles here */
+
+/* Gallery Grid */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two photos per row on larger screens */
+  gap: 16px; /* Adjust the gap between photos as needed */
+}
+
+@media (max-width: 768px) {
+  .grid-gallery {
+    grid-template-columns: repeat(1, 1fr); /* One photo per row on smaller screens */
+  }
+}
+
+/* Gallery Tile Styling */
+.gallery-tile img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Add rounded corners to the images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+/* You can include this CSS in your custom CSS file or in the <style> tags within the <head> section */
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .swiper-slide {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Shadow effect */
+  .swiper-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust the opacity as needed */
+    z-index: 1;
+  }
+  
+/* Text position */
+.swiper-slide .text-container {
+    position: absolute;
+    bottom: 8rem;
+    left: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  /* Font sizes based on screen size */
+  @media (min-width: 768px) {
+    .swiper-slide .text-container h1 {
+      font-size: 3rem;
+      line-height: 4rem;
+    }
+    
+    .swiper-slide .text-container p {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .swiper-slide .text-container h1 {
+      font-size: 1.5rem;
+    }
+    
+    .swiper-slide .text-container p {
+      font-size: 1rem;
+    }
+
+    /* Text position */
+.swiper-slide .text-container {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  }
+  
+  
+
+@media (max-width: 768px) {
+    /* Styles for mobile screens */
+    /* Hide the navigation links when the screen is small (mobile) */
+    .hidden {
+      display: none;
+    }
+    /* Show the navigation links when the mobile menu icon is clicked */
+    .show-mobile-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  /* Add your custom styles here */
+
+/* Footer Styling */
+.footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .social-icons {
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-right: 0.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #007bff;
+    line-height: 36px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .social-icon:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Add your custom styles here */
+
+/* Sticky Header */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50; /* Adjust the z-index value as needed */
+  }
+  
+  /* Header Styling */
+  .bg-white-700 {
+    background-color: #f9fafb;
+  }
+  .text-black {
+    color: #333;
+  }
+  
+  /* Add any additional styling for the header as needed */
+ /* Your custom styles for the card component */
+.container {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  padding: 12px;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.courses-extra.hidden {
+  display: none;
+}
+
+.see-more {
+  cursor: pointer;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.staff-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.card-text {
+  margin: 4px 0;
+}
