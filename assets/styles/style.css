@@ -423,7 +423,7 @@
 }
 
 /* Media Query for screens below 320px width */
-@media (max-width: 320px) {
+@media (max-width: 370px) {
   p {
     font-size: 10px; /* Adjust the font size as needed */
   }
