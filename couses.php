@@ -45,9 +45,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto flex items-center">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aboutus.html">About</a>
@@ -59,132 +59,87 @@
             </a>
             <!-- Submenu -->
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="active dropdown-item" href="couses.html">Courses</a></li>
-              <li><a class="dropdown-item" href="academicstaff.html">Academic Staff</a></li>
-              <li><a class="dropdown-item" href="nonacademicstaff.html">Non-Academic Staff</a></li>
+              <li><a class="active dropdown-item" href="couses.php">Courses</a></li>
+              <li><a class="dropdown-item" href="academicstaff.php">Academic Staff</a></li>
+              <li><a class="dropdown-item" href="nonacademicstaff.php">Non-Academic Staff</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="event.html">Events</a>
+            <a class="nav-link" href="event.php">Events</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contactus.html">Contact Us</a>
+         <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+          <li>
+            <a href="studentlogin.php"
+              class="bg-blue-500 text-decoration-none hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              Login <i class="bi bi-arrow-right-short"></i>
+            </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container mx-auto mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <!-- 100 LEVEL Card -->
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">100 LEVEL</h5>
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>CS101:</strong> Introduction to Computer Science</p>
-        <p class="mb-1"><strong>CS102:</strong> Programming Fundamentals</p>
-        <p class="mb-1"><strong>CS103:</strong> Web Development Basics</p>
-        <div class="courses-extra hidden">
-          <p class="mb-1"><strong>CS104:</strong> Discrete Mathematics</p>
-          <p class="mb-1"><strong>CS105:</strong> Data Structures and Algorithms</p>
-        </div>
-        <button class="see-more text-blue-500">See More</button>
-      </div>
-    </div>
+  <div class="container mx-auto mt-5">
+    <?php
+    $host = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'cscassigment';
 
-    <!-- Add more cards for different levels -->
-    <!-- 200 LEVEL Card -->
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">200 LEVEL</h5>
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>CS201:</strong> Object-Oriented Programming</p>
-        <p class="mb-1"><strong>CS202:</strong> Database Management Systems</p>
-        <p class="mb-1"><strong>CS203:</strong> Computer Networks</p>
-        <div class="courses-extra hidden">
-          <p class="mb-1"><strong>CS204:</strong> Operating Systems</p>
-          <p class="mb-1"><strong>CS205:</strong> Software Engineering</p>
-        </div>
-        <button class="see-more text-blue-500">See More</button>
-      </div>
-      <!-- Card content -->
-    </div>
+    // Create a connection
+    $conn = new mysqli($host, $username, $password, $database);
 
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
 
-    <!-- 300 LEVEL Card -->
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">300 LEVEL</h5>
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>CS301:</strong> Artificial Intelligence</p>
-        <p class="mb-1"><strong>CS302:</strong> Data Science</p>
-        <p class="mb-1"><strong>CS303:</strong> Mobile App Development</p>
-        <div class="courses-extra hidden">
-          <p class="mb-1"><strong>CS304:</strong> Web Development</p>
-          <p class="mb-1"><strong>CS305:</strong> Cybersecurity</p>
-        </div>
-        <button class="see-more text-blue-500">See More</button>
-      </div>
-      <!-- Card content -->
-    </div>
+    // Prepare and execute a query to fetch course data grouped by level
+    $sql = "SELECT course_code, course_title, about_course, course_level FROM courses ORDER BY course_level_value";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
 
-    <!-- 400 LEVEL Card -->
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">400 LEVEL</h5>
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>CS401:</strong> Machine Learning</p>
-        <p class="mb-1"><strong>CS402:</strong> Cloud Computing</p>
-        <p class="mb-1"><strong>CS403:</strong> Big Data Analytics</p>
-        <div class="courses-extra hidden">
-          <p class="mb-1"><strong>CS404:</strong> Computer Graphics</p>
-          <p class="mb-1"><strong>CS405:</strong> Distributed Systems</p>
-        </div>
-        <button class="see-more text-blue-500">See More</button>
-      </div>
-    </div>
+    // Bind result variables
+    $stmt->bind_result($courseCode, $courseTitle, $aboutCourse, $courseLevel);
 
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">PGD</h5>
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>CS501:</strong> Introduction to Postgraduate Studies</p>
-        <p class="mb-1"><strong>CS502:</strong> Advanced Programming Concepts</p>
-        <p class="mb-1"><strong>CS503:</strong> Database Systems Design</p>
-        <div class="courses-extra hidden">
-          <p class="mb-1"><strong>CS504:</strong> Network Security</p>
-          <p class="mb-1"><strong>CS505:</strong> Software Project Management</p>
-        </div>
-        <button class="see-more text-blue-500">See More</button>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header bg-primary text-white">
-        <h5 class="mb-0">MSc</h5>
-      </div>
-      <div class="card-body">
-        <p class="mb-1"><strong>CS601:</strong> Advanced Algorithms and Data Structures</p>
-        <p class="mb-1"><strong>CS602:</strong> Machine Learning and Pattern Recognition</p>
-        <p class="mb-1"><strong>CS603:</strong> Cloud Computing and Virtualization</p>
-        <div class="courses-extra hidden">
-          <p class="mb-1"><strong>CS604:</strong> Information Security Management</p>
-          <p class="mb-1"><strong>CS605:</strong> Internet of Things and Smart Systems</p>
-        </div>
-        <button class="see-more text-blue-500">See More</button>
-      </div>
-    </div>
-    <!-- Card content -->
-  </div>
+    // Initialize a variable to track the current course level
+    $currentLevel = null;
 
+    // Fetch course data and display in grouped cards
+    while ($stmt->fetch()) {
+        // If a new course level is encountered, display its title
+        if ($courseLevel !== $currentLevel) {
+            if ($currentLevel !== null) {
+                echo '</div>';
+            }
+            echo '<h2 class="text-2xl font-bold mb-4">' . $courseLevel . ' Courses</h2>';
+            echo '<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">';
+            $currentLevel = $courseLevel;
+        }
 
+        echo '<div class="card">';
+        echo '<div class="card-header bg-primary text-white">';
+        echo '<h5 class="mb-0">' . $courseCode . '</h5>';
+        echo '</div>';
+        echo '<div class="card-body">';
+        echo '<p class="mb-1"><strong>' . $courseCode . ':</strong> ' . $courseTitle . '</p>';
+        echo '<p class="mb-1">' . $aboutCourse . '</p>';
+        echo '</div>';
+        echo '</div>';
+    }
 
+    if ($currentLevel !== null) {
+        echo '</div>';
+    }
 
+    // Close the statement and connection
+    $stmt->close();
+    $conn->close();
+    ?>
 </div>
+
 
   <section class="bg-gradient-to-r from-blue-500 to-blue-700 py-8 text-white">
     <div class="container mx-auto">

@@ -1,0 +1,53 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.active{
+    background: #eee;
+    color: #222;
+    padding: .5rem;
+}
+
+/* .number-of-messages{
+    background: red !important;
+    color: #eee;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+} */
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+/* Responsive Grid Columns */
+@media (min-width: 576px) {
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 992px) {
+    .grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

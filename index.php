@@ -15,8 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"
     crossorigin="anonymous"></script>
-    <!-- Splide.js CSS -->
-<link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.6/dist/css/splide.min.css">
+  <!-- Splide.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/@splidejs/splide@3.0.6/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 </head>
 
@@ -24,109 +25,114 @@
 
 <body class="bg-gray-100">
   <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <div class="flex items-center">
-            <div class="mr-2">
-              <img src="assets/images/nacosandful-removebg-preview.png" alt="Logo 1" class="w-12 h-12" />
-            </div>
-            <div>
-              <img src="assets/images/nacoslogo-removebg-preview.png" alt="Logo 2" class="w-12 h-12" />
-            </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white absolute sticky">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <div class="flex items-center">
+          <div class="mr-2">
+            <img src="assets/images/nacosandful-removebg-preview.png" alt="Logo 1" class="w-12 h-12" />
           </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="active nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutus.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Academics
-              </a>
-              <!-- Submenu -->
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="couses.html">Courses</a></li>
-                <li><a class="dropdown-item" href="academicstaff.html">Academic Staff</a></li>
-                <li><a class="dropdown-item" href="nonacademicstaff.html">Non-Academic Staff</a></li>
-             </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="event.html">Events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contactus.html">Contact Us</a>
-            </li>
-          </ul>
+          <div>
+            <img src="assets/images/nacoslogo-removebg-preview.png" alt="Logo 2" class="w-12 h-12" />
+          </div>
         </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex items-center">
+          <li class="nav-item">
+            <a class="active nav-link" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Academics
+            </a>
+            <!-- Submenu -->
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="couses.php">Courses</a></li>
+              <li><a class="dropdown-item" href="academicstaff.php">Academic Staff</a></li>
+              <li><a class="dropdown-item" href="nonacademicstaff.php">Non-Academic Staff</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="event.php">Events</a>
+          </li>
+         <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+          <li>
+            <a href="studentlogin.php"
+              class="bg-blue-500 text-decoration-none hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              Login <i class="bi bi-arrow-right-short"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    
+    </div>
+  </nav>
 
-    <section class="relative mobile-height md:h-[500px]">
-      <div class="swiper-container h-full">
-        <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div class="swiper-slide">
-            <img src="assets/images/arnu-2023-event.jpg" alt="Slide 1" class="w-full h-full object-cover" />
-            <div class="text-container">
-              <h1 class="text-white text-xl font-bold">
-                Welcome to the Department of Computer Science at Federal University Lokoja
-              </h1>
-              <p class="text-white text-sm hide-on-mobile">
-                Dynamic field powering technology and innovation, turning ideas into reality through programming.   </p>
-            </div>
+
+  <section class="relative mobile-height md:h-[500px]">
+    <div class="swiper-container h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img src="assets/images/students1.jpg" alt="Slide 1" class="w-full h-full object-cover" />
+          <div class="text-container">
+            <h1 class="text-white text-xl font-bold">
+              Welcome to the Department of Computer Science at Federal University Lokoja
+            </h1>
+            <p class="text-white text-sm hide-on-mobile">
+              Dynamic field powering technology and innovation, turning ideas into reality through programming. </p>
           </div>
-          <div class="swiper-slide">
-            <img src="assets/images/ful-banner.jpg" alt="Slide 1" class="w-full h-full object-cover" />
-            <div class="text-container">
-              <h1 class="text-white text-xl font-bold">
-                Welcome to the Department of Computer Science at Federal University Lokoja
-              </h1>
-              <p class="text-white text-sm hide-on-mobile">
-                Nurturing computer scientists through dedicated faculty, state-of-the-art facilities, exploring vast realms of Computer science
-               </p>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/pre-degree.jpeg" alt="Slide 1" class="w-full h-full object-cover" />
-            <div class="text-container">
-              <h1 class="text-white text-xl font-bold">Who are we!</h1>
-              <p class="text-white text-sm hide-on-mobile">
-                We are the roaring department, delivering on every promise we make.
-              </p>
-            </div>
-          </div>
-          <!-- Add more slides with images and content as needed -->
         </div>
+        <div class="swiper-slide">
+          <img src="assets/images/students2.jpg" alt="Slide 1" class="w-full h-full object-cover" />
+          <div class="text-container">
+            <h1 class="text-white text-xl font-bold">
+              Welcome to the Department of Computer Science at Federal University Lokoja
+            </h1>
+            <p class="text-white text-sm hide-on-mobile">
+              Nurturing computer scientists through dedicated faculty, state-of-the-art facilities, exploring vast
+              realms of Computer science
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/students3.jpg" alt="Slide 1" class="w-full h-full object-cover" />
+          <div class="text-container">
+            <h1 class="text-white text-xl font-bold">Who are we!</h1>
+            <p class="text-white text-sm hide-on-mobile">
+              We are the roaring department, delivering on every promise we make.
+            </p>
+          </div>
+        </div>
+        <!-- Add more slides with images and content as needed -->
       </div>
-    </section>
-    
+    </div>
+  </section>
+
   <section class="bg-gray-100 py-16">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
+    <div class="container mx-auto flex flex-col md:flex-col  justify-center">
       <!-- HOD Image and Info -->
-      <div class="w-full md:w-1/3 mb-8 md:mb-0 flex items-center justify-center">
+      <div class="w-full mb-8 md:mb-0 flex items-center">
         <img src="assets/images/prof.jpeg" alt="Head of Department" class="w-40 h-40 rounded-full mr-4" />
         <div>
-          <h2 class=" font-bold mb-2">Head of Department</h2>
-          <p>Dr. John Doe</p>
-          <p class="text-gray-500">PhD, MSc, BSc</p>
+          <h2 class=" font-bold mb-2">Head of Department's Welcome Address</h2>
+          <p>Edgar Osaghae</p>
+          <p class="text-gray-500">BSc., MSc and PhD in Computer Science</p>
         </div>
       </div>
 
       <!-- HOD Welcome Address -->
-      <div class="w-full md:w-2/3">
-        <h2 class="text-3xl font-bold mb-4">
-          Welcome Address
-        </h2>
+      <div class="w-full md:w-full">
         <div class="text-sm md:text-base">
           <!-- Display the first 4 lines of text -->
           <p class="line-clamp-4" id="welcome-text">
@@ -222,108 +228,85 @@
     </div>
   </section>
   <section class="bg-gray-100 py-5">
-    <div class="container mx-auto">
-      <!-- ... (same as before) -->
+  <div class="container mx-auto">
+  <!-- Our Final Words Slider -->
+  <div class="our-final-words-slider">
+    <?php
+    $host = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'cscassigment';
 
-      <!-- Our Final Words Slider -->
-      <div class="our-final-words-slider">
-        <!-- Card 1 -->
-        <div class="card">
-          <p class="quote italic">
-            "This department has provided me with endless opportunities to explore my passion for computer science. The
-            journey has been inspiring and transformative, and I am grateful for the incredible support of the faculty
-            and fellow students."
-          </p>
-          <p class="student-name font-bold">Jane Ajodo - Final words</p>
-        </div>
+    // Create a connection
+    $connection = new mysqli($host, $username, $password, $database);
 
-        <!-- Card 2 -->
-        <div class="card">
-          <p class="quote italic">
-            "Studying computer science at Federal University Lokoja has been an amazing experience. The challenging
-            projects and the nurturing environment have truly prepared me for a successful career in this ever-evolving
-            field."
-          </p>
-          <p class="student-name font-bold">Shittu Aishat - Final words</p>
-        </div>
+    if ($connection->connect_error) {
+        die("Connection failed: " . $connection->connect_error);
+    }
 
-        <!-- Card 3 -->
-        <div class="card">
-          <p class="quote italic">
-            "Being part of this department has been an incredible journey. The knowledge and skills I've gained here
-            have empowered me to tackle real-world problems and make a difference in society."
-          </p>
-          <p class="student-name font-bold">Okafor Chukwuemeka - Final words</p>
-        </div>
+    // Retrieve final words from the database
+    $query = "SELECT final_word, author FROM final_words";
+    $result = $connection->query($query);
 
-        <!-- Card 4 -->
-        <div class="card">
-          <p class="quote italic">
-            "I'm grateful for the opportunities provided by this department. The guidance of the faculty and the
-            camaraderie among students have been invaluable in shaping my path to becoming a proficient computer
-            scientist."
-          </p>
-          <p class="student-name font-bold">Okafor Chiamaka - Final words</p>
-        </div>
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo '<div class="card">';
+            echo '<p class="quote italic">' . $row['final_word'] . '</p>';
+            echo '<p class="student-name font-bold">' . $row['author'] . ' - Final words</p>';
+            echo '</div>';
+        }
+    } else {
+        echo '<p class="text-gray-500">No final words available yet.</p>';
+    }
 
-        <!-- Card 5 -->
-        <div class="card">
-          <p class="quote italic">
-            "As a computer science student, I've been exposed to cutting-edge technologies and industry-relevant
-            projects. The hands-on experience has made me confident in my abilities to tackle real-world challenges."
-          </p>
-          <p class="student-name font-bold">Adewale Olusegun - Final words</p>
-        </div>
+    // Close the database connection
+    $connection->close();
+    ?>
+  </div>
+</div>
 
-        <!-- Card 6 -->
-        <div class="card">
-          <p class="quote italic">
-            "Studying computer science in this department has been a transformative experience. The supportive
-            environment and innovative curriculum have equipped me with the skills needed to thrive in the tech
-            industry."
-          </p>
-          <p class="student-name font-bold">Okafor Emeka - Final words</p>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section class="bg-gray-100 py-12">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-center">Upcoming Events</h2>
       <div class="event-cards">
-        <!-- Event Card 1 -->
-        <div class="event-card">
-          <div class="event-image" style="background-image: url('assets/images/party.jpeg');">
-            <div class="overlay">
-              <h3 class="event-title">Event Title 1</h3>
-              <p class="event-text">About the event - Event description goes here.</p>
-            </div>
-          </div>
-        </div>
+        <?php
+        $host = 'localhost';
+        $username = 'root';
+        $password = '';
+        $database = 'cscassigment';
 
-        <!-- Event Card 2 -->
-        <div class="event-card">
-          <div class="event-image" style="background-image: url('assets/images/tech.jpeg');">
-            <div class="overlay">
-              <h3 class="event-title">Event Title 2</h3>
-              <p class="event-text">About the event - Event description goes here.</p>
-            </div>
-          </div>
-        </div>
+        $connection = mysqli_connect($host, $username, $password, $database);
 
-        <!-- Event Card 3 -->
-        <div class="event-card">
-          <div class="event-image" style="background-image: url('assets/images/ful-banner.jpg');">
-            <div class="overlay">
-              <h3 class="event-title">Event Title 3</h3>
-              <p class="event-text">About the event - Event description goes here.</p>
-            </div>
-          </div>
-        </div>
+        if (!$connection) {
+          die('Connection failed: ' . mysqli_connect_error());
+        }
+
+        $query = "SELECT * FROM events LIMIT 3"; // Fetch up to 3 events
+        $result = mysqli_query($connection, $query);
+
+        if (mysqli_num_rows($result) > 0) {
+          while ($row = mysqli_fetch_assoc($result)) {
+            $aboutEvent = implode(' ', array_slice(explode(' ', $row['about_event']), 0, 15));
+            echo '<div class="event-card">';
+            echo '<div class="event-image" style="background-image: url(\'dashboard/' . $row['event_image'] . '\');">';
+            echo '<div class="overlay">';
+            echo '<h3 class="event-title">' . $row['event_title'] . '</h3>';
+            echo '<p class="event-text">' . $aboutEvent . '...</p>';
+            echo '</div>';
+            echo '</div>';
+            echo '</div>';
+          }
+        } else {
+          echo '<p>No events available.</p>';
+        }
+
+        mysqli_close($connection);
+        ?>
       </div>
       <div class="see-more-events">
-        <a href="event-page.html" class="see-more-link">See More Events</a>
+        <a href="event.php" class="see-more-link">See More Events</a>
       </div>
     </div>
   </section>
@@ -402,83 +385,91 @@
   <section class="bg-white py-12">
     <div class="container mx-auto">
       <h2 class="text-3xl font-bold mb-8 text-center">Student Success Stories</h2>
-  
       <!-- Success Stories Slider -->
       <div class="splide">
         <div class="splide__track">
           <ul class="splide__list grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Success Story 1 -->
-            <li class="splide__slide">
-              <div class="card bg-gray-100 p-4">
-                <div class="mb-4">
-                  <img src="assets/images/dp2.jpeg" alt="Student 1" class="w-20 h-20 rounded-full mx-auto">
-                </div>
-                <h3 class="text-lg font-bold text-center">John Doe</h3>
-                <p class="text-center mb-4">
-                  "Studying computer science at Federal University Lokoja has been an eye-opening experience. The NACOSS community
-                  has provided me with endless opportunities to explore my passion for programming and AI."
-                </p>
-              </div>
-            </li>
-  
-            <!-- Success Story 2 -->
-            <li class="splide__slide">
-              <div class="card bg-gray-100 p-4">
-                <div class="mb-4">
-                  <img src="assets/images/dp1.jpeg" alt="Student 2" class="w-20 h-20 rounded-full mx-auto">
-                </div>
-                <h3 class="text-lg font-bold text-center">Jane Smith</h3>
-                <p class="text-center mb-4">
-                  "NACOSS has been a support system throughout my journey in computer science. The events and workshops organized
-                  have broadened my knowledge and helped me build valuable connections."
-                </p>
-              </div>
-            </li>
-  
-            <!-- Success Story 3 -->
-            <li class="splide__slide">
-              <div class="card bg-gray-100 p-4">
-                <div class="mb-4">
-                  <img src="assets/images/dp3.png" alt="Student 3" class="w-20 h-20 rounded-full mx-auto">
-                </div>
-                <h3 class="text-lg font-bold text-center">Michael Johnson</h3>
-                <p class="text-center mb-4">
-                  "Being part of NACOSS has been a transformative experience. The leadership opportunities and industry exposure
-                  I gained have been instrumental in shaping my career in computer science."
-                </p>
-              </div>
-            </li>
+
+            <?php
+            $host = 'localhost';
+            $username = 'root';
+            $password = '';
+            $database = 'cscassigment';
+
+            $connection = mysqli_connect($host, $username, $password, $database);
+
+            if (!$connection) {
+              die('Connection failed: ' . mysqli_connect_error());
+            }
+
+            $query = "SELECT * FROM success_stories";
+            $result = mysqli_query($connection, $query);
+
+            if (mysqli_num_rows($result) > 0) {
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo '<li class="splide__slide">';
+                echo '<div class="card bg-gray-100 p-4">';
+                echo '<div class="mb-4">';
+                echo '<img src="' . $row['image_url'] . '" alt="Student" class="w-20 h-20 rounded-full mx-auto">';
+                echo '</div>';
+                echo '<h3 class="text-lg font-bold text-center">' . $row['user_name'] . '</h3>';
+                echo '<p class="text-center mb-4">' . $row['story'] . '</p>';
+                echo '</div>';
+                echo '</li>';
+              }
+            } else {
+              echo '<p>No success stories available.</p>';
+            }
+
+            mysqli_close($connection);
+            ?>
+
           </ul>
         </div>
       </div>
-  
-      <!-- Input Form for New Students -->
-      <div class="max-w-md mx-auto mt-12">
+
+      <!-- Input Form for New Success Stories -->
+      <div class="container mx-auto mt-12">
         <h3 class="text-xl font-bold mb-4 text-center">Share Your Success Story</h3>
-        <form class="flex flex-col space-y-4">
+        <form action="submit_story.php" method="post" class="space-y-4 flex items-center justify-between w-full"
+          enctype="multipart/form-data">
           <div class="flex flex-col items-center">
-            <div class="profile-pic-preview">
-              <img src="assets/images/dp.jpeg" alt="Profile Picture" class="profile-pic" id="profile-pic-preview">
-              <label for="profile-pic" class="profile-pic-label">
-                <span class="icon"><i class="fas fa-camera"></i></span>
+            <div class="mb-4">
+              <div class="w-32 h-32 rounded-full overflow-hidden">
+                <img src="assets/images/dp.jpeg" alt="Profile Picture" class="w-full h-full object-cover"
+                  id="profile-pic-preview">
+              </div>
+              <label for="profile-pic" class="block text-center mt-2 cursor-pointer">
+                <span class="text-blue-500"><i class="fas fa-camera"></i></span>
                 Choose Profile Picture
               </label>
-              <input type="file" id="profile-pic" class="input" accept="image/*" required>
+              <input type="file" id="profile-pic" name="profile_pic" class="hidden" accept="image/*" required>
             </div>
           </div>
-          
-          <input type="text" class="input" placeholder="Your Name" required>
-          <input type="text" class="input" placeholder="Matric Number" required>
-          <textarea class="input" rows="4" placeholder="Your Success Story or Experience" required></textarea>
-          <button type="submit" class="btn btn-primary">
-            <span class="mr-2"><i class="fas fa-check"></i></span>Submit
-          </button>
-          
+          <div class="w-full">
+            <div class="mb-4 w-full">
+              <input type="text" name="user_name" class="form-input outline-none border-1 w-full p-4"
+                placeholder="Your Name" required>
+            </div>
+            <div class="mb-4 w-full">
+              <input type="text" name="matric_number" class="form-input  outline-none border-1 w-full p-4"
+                placeholder="Matric Number" required>
+            </div>
+            <div class="mb-4 w-full">
+              <textarea name="story" class="form-textarea  outline-none border-1 w-full p-4" rows="4"
+                placeholder="Your Success Story or Experience" maxlength="75" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary flex items-center  outline-none border-1 w-full p-4">
+              <span class="mr-2"><i class="fas fa-check"></i></span>Submit
+            </button>
+          </div>
         </form>
       </div>
+
     </div>
   </section>
-  
+
+
   <!-- Features Section -->
   <section class="bg-white py-12 px-4">
     <div class="container mx-auto">
@@ -579,24 +570,39 @@
         slidesToScroll: 1,
       });
     });
+
+
+    const profilePicInput = document.getElementById('profile-pic');
+    const profilePicPreview = document.getElementById('profile-pic-preview');
+
+    profilePicInput.addEventListener('change', (event) => {
+      const selectedFile = event.target.files[0];
+      if (selectedFile) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+          profilePicPreview.src = e.target.result;
+        };
+        reader.readAsDataURL(selectedFile);
+      }
+    });
   </script>
-<!-- Splide.js JS -->
-<script src="https://unpkg.com/@splidejs/splide@3.0.6/dist/js/splide.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Splide('.splide', {
-      perPage: 3,
-      perMove: 1,
-      gap: '1rem',
-      breakpoints: {
-        768: {
-          perPage: 1,
-          arrows: false,
+  <!-- Splide.js JS -->
+  <script src="https://unpkg.com/@splidejs/splide@3.0.6/dist/js/splide.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.splide', {
+        perPage: 3,
+        perMove: 1,
+        gap: '1rem',
+        breakpoints: {
+          768: {
+            perPage: 1,
+            arrows: false,
+          },
         },
-      },
-    }).mount();
-  });
-</script>
+      }).mount();
+    });
+  </script>
 
   <script>
     const swiper = new Swiper(".swiper-container", {

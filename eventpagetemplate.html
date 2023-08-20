@@ -40,9 +40,9 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto flex items-center">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="aboutus.html">About</a>
@@ -53,17 +53,23 @@
                 </a>
                 <!-- Submenu -->
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="couses.html">Courses</a></li>
-                  <li><a class="dropdown-item" href="academicstaff.html">Academic Staff</a></li>
-                  <li><a class="dropdown-item" href="nonacademicstaff.html">Non-Academic Staff</a></li>
+                  <li><a class="dropdown-item" href="couses.php">Courses</a></li>
+                  <li><a class="dropdown-item" href="academicstaff.php">Academic Staff</a></li>
+                  <li><a class="dropdown-item" href="nonacademicstaff.php">Non-Academic Staff</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="active nav-link" href="event.html">Events</a>
+                <a class="active nav-link" href="event.php">Events</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contactus.html">Contact Us</a>
-              </li>
+             <li class="nav-item">
+            <a class="nav-link" href="contactus.html">Contact us</a>
+          </li>
+          <li>
+            <a href="studentlogin.php"
+              class="bg-blue-500 text-decoration-none hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
+              Login <i class="bi bi-arrow-right-short"></i>
+            </a>
+          </li>
             </ul>
           </div>
         </div>
@@ -88,7 +94,7 @@
                 <!-- Add pagination -->
                 <div class="swiper-pagination"></div>
               </div>
-    
+      
               <!-- Event Details -->
               <div class="bg-white p-4 shadow-md">
                 <h2 class="text-3xl font-bold mb-4">Event Title 1</h2>
@@ -99,59 +105,44 @@
                 </p>
                 <a href="#" class="text-blue-500">See More</a>
               </div>
-    
- <!-- Comment Section -->
-<div class="bg-white p-4 mt-4 shadow-md">
-    <h2 class="text-2xl font-bold mb-4">Comments</h2>
-  
-    <!-- Sample Comments -->
-    <div class="border-t border-gray-300 pt-4 mt-4">
-      <p class="text-gray-500 mb-2">Chinedu</p>
-      <p class="text-sm mb-4">
-       <span class="font-bold">Comment:</span> The event was amazing! I learned so much and had a great time networking with fellow students.
-      </p>
-    </div>
-  
-    <div class="border-t border-gray-300 pt-4 mt-4">
-      <p class="text-gray-500 mb-2">Adesua</p>
-      <p class="text-sm mb-4">
-       <span class="font-bold">Comment:</span> This event was an eye-opener for me. The speakers were inspiring, and I gained valuable insights.
-      </p>
-    </div>
-  
-    <div class="border-t border-gray-300 pt-4 mt-4">
-      <p class="text-gray-500 mb-2">Abdullahi</p>
-      <p class="text-sm mb-4">
-       <span class="font-bold">Comment:</span> As a current student, I found this event extremely helpful in preparing for my career after graduation.
-      </p>
-    </div>
-  
-    <div class="border-t border-gray-300 pt-4 mt-4">
-      <p class="text-gray-500 mb-2">Bukola</p>
-      <p class="text-sm mb-4">
-       <span class="font-bold">Comment:</span> Kudos to the organizers! This event was well-organized and provided valuable resources for us.
-      </p>
-    </div>
-  
-    <!-- Comment Submission Form -->
-    <div class="mt-4">
-      <h2 class="text-2xl font-bold mb-2">Submit Your Comment</h2>
-      <form class="mb-4">
-        <div class="mb-2">
-          <label for="name" class="block text-gray-700">Name</label>
-          <input type="text" id="name" name="name" required class="form-input w-full px-4 py-2 rounded-lg">
-        </div>
-        <div class="mb-2">
-          <label for="comment" class="block text-gray-700">Comment</label>
-          <textarea id="comment" name="comment" required class="form-textarea w-full px-4 py-2 rounded-lg"></textarea>
-        </div>
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Submit</button>
-      </form>
-    </div>
-  </div>
-  
+              
+              <!-- Comment Section -->
+              <div class="bg-white p-4 mt-4 shadow-md">
+                <h2 class="text-2xl font-bold mb-4">Comments</h2>
+      
+                <!-- Sample Comments -->
+                <div class="border-t border-gray-300 pt-4 mt-4">
+                  <p class="text-gray-500 mb-2">Chinedu</p>
+                  <p class="text-sm mb-4">
+                   <span class="font-bold">Comment:</span> The event was amazing! I learned so much and had a great time networking with fellow students.
+                  </p>
+                </div>
+      
+                <div class="border-t border-gray-300 pt-4 mt-4">
+                  <p class="text-gray-500 mb-2">Adesua</p>
+                  <p class="text-sm mb-4">
+                   <span class="font-bold">Comment:</span> This event was an eye-opener for me. The speakers were inspiring, and I gained valuable insights.
+                  </p>
+                </div>
+      
+                <!-- Comment Submission Form -->
+                <div class="mt-4">
+                  <h2 class="text-2xl font-bold mb-2">Submit Your Comment</h2>
+                  <form class="mb-4">
+                    <div class="mb-2">
+                      <label for="name" class="block text-gray-700">Name</label>
+                      <input type="text" id="name" name="name" required class="form-input w-full px-4 py-2 rounded-lg">
+                    </div>
+                    <div class="mb-2">
+                      <label for="comment" class="block text-gray-700">Comment</label>
+                      <textarea id="comment" name="comment" required class="form-textarea w-full px-4 py-2 rounded-lg"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Submit</button>
+                  </form>
+                </div>
+              </div>
             </div>
-    
+      
             <!-- Sidebar (Additional Events or Information) -->
             <div class="w-full lg:w-1/3 px-4">
               <div class="bg-white p-4 shadow-md">
@@ -177,6 +168,7 @@
           </div>
         </div>
       </section>
+      
       <!---event page content --->
       <!---event page content --->
   <section class="bg-gradient-to-r from-blue-500 to-blue-700 py-8 text-white">
